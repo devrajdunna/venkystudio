@@ -1,0 +1,90 @@
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<%= form_with(model: camera, local: true) do |form| %>
+  <% if camera.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(camera.errors.count, "error") %> prohibited this camera from being saved:</h2>
+
+      <ul>
+      <% camera.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<body>
+<div align="center">
+  <div class="field",>
+    Firstname:<%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    
+    Lastname:<%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    
+
+   M/F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<%= form.text_field :morf %>
+  </div>
+
+  <div class="field">
+  
+  Startdate:<%= form.text_field :startdate %>
+  </div>
+
+  <div class="field">
+    
+    Enddate&nbsp;&nbsp;:<%= form.text_field :enddate %>
+  </div>
+
+  <div class="field">
+  
+  Category:<%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    
+    Address&nbsp;:<%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    
+    Landmark:<%= form.text_field :landmark %>
+  </div>
+
+  <div class="field">
+    
+    Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<%= form.text_field :emil %>
+  </div>
+
+  <div class="field">
+    
+    Phone&nbsp;&nbsp;&nbsp;&nbsp;:<%= form.number_field :phone %>
+  </div>
+
+  <div class="field">
+    
+    Camman:<%= form.text_field :cameraman %>
+  </div>
+
+  <div class="field">
+    
+    Owner&nbsp;&nbsp;&nbsp;:<%= form.text_field :owner %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+</div>
+<% end %>
+</body>

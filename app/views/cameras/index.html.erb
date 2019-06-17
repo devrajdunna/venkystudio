@@ -1,0 +1,75 @@
+<h1 align="center"><font color="red">SRFC</font><font color="blue"> presents</font></h1>
+<style type="text/css">
+  body{
+    background-image: url("assets/hom4.jpg");
+    background-size:cover;
+  }
+  .table{
+    background-color:#00ff80;
+  }
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<p id="notice"><%= notice %></p>
+
+
+
+
+<body>
+<h2 align="center"><font color="blue" >Booking Dates Below</font></h2>
+<marquee behavior="alternate"bgcolor="powderblue"><font color="red"><b>Please see conformation dates then go to new booking options</b></font></marquee>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Firstname </th>
+      <th scope="col">Lastname</th>
+      <th scope="col">M/F</th>
+      <th scope="col">Startdate</th>
+      <th scope="col">Enddate </th>
+      <th scope="col">Category </th>
+      <th scope="col">Address </th>
+      <th scope="col">Landmark </th>
+      <th scope="col">Emil </th>
+      <th scope="col">Phone </th>
+      <th scope="col">Cameraman </th>
+      <th scope="col">Owner</th>
+    </font>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cameras.each do |camera| %>
+      <tr>
+        <td></td>
+        <td><%= camera.first_name %></td>
+        <td><%= camera.last_name %></td>
+        <td><%= camera.morf %></td>
+        <td><%= camera.startdate %></td>
+        <td><%= camera.enddate %></td>
+        <td><%= camera.category %></td>
+        <td><%= camera.address %></td>
+        <td><%= camera.landmark %></td>
+        <td><%= camera.emil %></td>
+        <td><%= camera.phone %></td>
+        <td><%= camera.cameraman %></td>
+        <td><%= camera.owner %></td>
+        <td><%= link_to 'Show', camera,class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_camera_path(camera),class: "btn btn-primary" %></td>
+        <td><%= link_to 'Destroy', camera, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-primary" %></td>
+      </tr>
+    <% end %>
+      <br>
+    </tbody>
+  </table>
+ <div align="center",>
+<%= link_to 'New bookings', new_camera_path,class: "btn btn-primary btn-lg active"  %>
+
+<%= link_to ' bookings dates', new_camera_path,class: "btn btn-secondary btn-lg active" %>
+</div>

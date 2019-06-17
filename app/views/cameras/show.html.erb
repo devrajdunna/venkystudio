@@ -1,0 +1,88 @@
+<h1 align="center"><font color="green">Save Data</font></h1>
+<style type="text/css">
+  body{
+    background-color:#00ff80 
+  }
+  .aa{
+    text-align: center;
+    background-color:#00bfff; 
+    
+  }
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+<p id="notice"><%= notice %></p>
+
+<div class="aa">
+
+<p>
+  <strong>First name:</strong>
+  <%= @camera.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @camera.last_name %>
+</p>
+
+<p>
+  <strong>M/F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
+  <%= @camera.morf %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @camera.startdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @camera.enddate %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @camera.category %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @camera.address %>
+</p>
+
+<p>
+  <strong>Landmark:</strong>
+  <%= @camera.landmark %>
+</p>
+
+<p>
+  <strong>Emil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
+  <%= @camera.emil %>
+</p>
+
+<p>
+  <strong>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
+  <%= @camera.phone %>
+</p>
+
+<p>
+  <strong>Camman&nbsp;:</strong>
+  <%= @camera.cameraman %>
+</p>
+
+<p>
+  <strong>Owner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
+  <%= @camera.owner %>
+</p>
+
+<%= link_to 'Edit', edit_camera_path(@camera),class: "btn btn-primary" %> |
+<%= link_to 'Back', cameras_path,class: "btn btn-primary" %>
+</div>
+</body>

@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @camera.startdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @camera.enddate %>
+</p>
+
+
+<%= link_to 'Edit', edit_camera_path(@camera) %> |
+<%= link_to 'Back', cameras_path %>

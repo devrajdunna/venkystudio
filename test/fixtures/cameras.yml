@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  morf: MyString
+  startdate: MyString
+  enddate: MyString
+  category: MyString
+  address: MyString
+  landmark: MyString
+  emil: MyString
+  phone: 1
+  cameraman: MyString
+  owner: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  morf: MyString
+  startdate: MyString
+  enddate: MyString
+  category: MyString
+  address: MyString
+  landmark: MyString
+  emil: MyString
+  phone: 1
+  cameraman: MyString
+  owner: MyString
