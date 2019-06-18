@@ -73,6 +73,6 @@ class CamerasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def camera_params
-      params.require(:camera).permit(:first_name, :last_name, :morf, :startdate, :enddate, :category, :address, :landmark, :emil, :phone, :cameraman, :owner)
+      params.require(:camera).permit(:first_name, :last_name, :morf, :startdate, :bill, :enddate, :category, :address, :landmark, :emil, :phone, :cameraman, :owner)
     end
 end

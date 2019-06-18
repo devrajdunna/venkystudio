@@ -10,23 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_15_052207) do
+ActiveRecord::Schema.define(version: 2019_06_17_132318) do
 
-  create_table "cameras", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "morf"
-    t.string "startdate"
-    t.string "enddate"
-    t.string "category"
-    t.string "address"
-    t.string "landmark"
-    t.string "emil"
-    t.integer "phone"
-    t.string "cameraman"
-    t.string "owner"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+# Could not dump table "cameras" because of following StandardError
+#   Unknown type 'ineger' for column 'bill'
 
 end
